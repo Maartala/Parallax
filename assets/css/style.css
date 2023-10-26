@@ -6,8 +6,40 @@
 
 html,
 body {
-    font-size: 10px;
     font-family: sans-serif;
     scroll-behavior: smooth;
     background-color: black;
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    perspective: 3px;
+}
+
+section {
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background-position: center center;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+}
+
+.text {
+    height: 50vh;
+}
+
+.heading {
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
 }
