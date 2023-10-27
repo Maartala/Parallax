@@ -21,6 +21,7 @@ body {
 section {
     background-size: cover;
     color: white;
+    background-color: var(--bg, --color-black);
     position: relative;
     display: flex;
     align-items: center;
@@ -42,4 +43,15 @@ section {
 .heading {
     z-index: -1;
     transform: translateY(-30vh) translateZ(1px) scale(1.5);
+}
+
+.footer {
+    position: relative;
+    display: block;
+    background-color: black;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
